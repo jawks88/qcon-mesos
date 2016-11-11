@@ -28,8 +28,17 @@
     }
   ],
   "labels": {
+    "HAPROXY_GROUP": "external",
     "DCOS_SERVICE_PORT_INDEX": "0",
     "DCOS_SERVICE_SCHEME": "http",
     "DCOS_SERVICE_NAME": "nginx-jameswu"
-  }
+  },
+  "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp",
+          "name": "http",
+          "servicePort": 0
+        }
+      ],
 }
