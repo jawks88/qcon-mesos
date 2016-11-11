@@ -12,7 +12,7 @@ node {
 
     // Build Docker image
     stage 'Build'
-    sh "docker build -t jawks88/qcon-mesos:${gitCommit()} ."
+    sh "docker build -t jawks/qcon-mesos:${gitCommit()} ."
 
     // Log in and push image to GitLab
     stage 'Publish'
